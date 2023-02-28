@@ -1,0 +1,13 @@
+/* стиль для декстопной версии до 1320 */
+@media (max-width: 1320px){
+    .container{
+        max-width: 768px;  
+        margin: 0 auto;
+    }
+    .header-inner a{
+        font-size: 16px;
+    }
+    .logo-img{
+        width: 80px;
+     }
+}

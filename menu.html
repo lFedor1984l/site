@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .hamb-menu{
+            width: 35px;
+            height: 26px;
+            border: 1px solid #000;
+            position: relative;
+        }
+        .hamp-item{
+            position: absolute;
+            width: 24px;
+            height: 2px;
+            background: #000;            
+            left: calc(50% - 12px);
+            transition: 0.5s;
+            transform-origin: 50% 50%;
+        }
+        .hamp-item-1{
+            top: 7px;            
+        }
+        .hamp-item-2{
+            top: 12px;
+        }
+        .hamp-item-3{
+            top: 17px;
+        }
+        .hamb-menu:hover .hamp-item-1{
+            transform: rotate(45deg);
+            /* left: calc(50% - 12px); */
+            top: calc(50%);
+        }
+        .hamb-menu:hover .hamp-item-3{
+            transform: rotate(-45deg);
+            /* left: calc(50% -12px); */
+            top: calc(50%);
+        }
+        .hamb-menu:hover .hamp-item-2{
+            transform: scale(0)
+        }
+    </style>
+</head>
+<body>
+    <div class="hamb-menu">
+        <div class="hamp-item hamp-item-1"></div>
+        <div class="hamp-item hamp-item-2"></div>
+        <div class="hamp-item hamp-item-3"></div>
+    </div>
+</body>
+</html>

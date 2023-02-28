@@ -1,0 +1,72 @@
+/* стиль для планшетной версии до 768 */
+@media (max-width: 768px){
+    .container{
+           width: 100%;
+           min-width: 275px;
+           margin: 0 auto;
+       }
+   .header-inner{
+           height: 50px;
+           width: 100%;
+           position: relative;
+       } 
+    .nav{
+       display: none;
+    }
+    .contact a{
+       font-size: 18px;
+    }
+    .link__call{
+       display: none;
+    }
+    .logo-img{
+       width: 80px;
+    }
+    /* кнопка для меню */
+    .hamb-menu{
+       width: 35px;
+       height: 26px;
+       border: 1px solid #000;
+       position: absolute;
+       right: 10px;
+       top: 10px;
+       display: block;
+   }
+   .hamp-item{
+       position: absolute;
+       width: 24px;
+       height: 2px;
+       background: #000;            
+       left: calc(50% - 12px);
+       transition: 0.5s;
+       transform-origin: 50% 50%;
+   }
+   .hamp-item-1{
+       top: 7px;            
+   }
+   .hamp-item-2{
+       top: 12px;
+   }
+   .hamp-item-3{
+       top: 17px;
+   }
+   .hamb-menu:hover .hamp-item-1{
+       transform: rotate(45deg);
+       /* left: calc(50% - 12px); */
+       top: calc(50%);
+   }
+   .hamb-menu:hover .hamp-item-3{
+       transform: rotate(-45deg);
+       /* left: calc(50% -12px); */
+       top: calc(50%);
+   }
+   .hamb-menu:hover .hamp-item-2{
+       transform: scale(0)
+   }   
+   
+   .contact{
+    margin-right: 55px;
+   }
+   
+   
+   }
